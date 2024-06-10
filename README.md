@@ -9,7 +9,7 @@
 
 #### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+git clone git@github.com:amit5885/Azayd_IT_Consultancy.git
 ```
 
 ### Step 2: Create Virtual Environment
