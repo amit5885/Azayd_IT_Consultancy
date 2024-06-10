@@ -1,0 +1,50 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Project Manager - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/careers.css" %}">
+{% endblock %}
+{%block content %}
+<section class="job-detail">
+  <div class="container">
+    <h2>Project Manager</h2>
+    <p><strong>Location:</strong> Hyderabad</p>
+    <p><strong>Experience:</strong> 3+ years</p>
+    <p><strong>Job Description:</strong></p>
+    <p>
+      We are seeking a Project Manager to oversee software development projects
+      from inception to completion. The ideal candidate will have experience in
+      project management, excellent communication skills, and the ability to
+      manage cross-functional teams.
+    </p>
+    <p><strong>Responsibilities:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>Plan, execute, and close projects successfully.</li>
+        <li>Manage project timelines, budgets, and resources.</li>
+        <li>Coordinate with clients and stakeholders.</li>
+        <li>Ensure project goals align with business objectives.</li>
+        <li>Identify and mitigate project risks.</li>
+      </ul>
+    </div>
+
+    <p><strong>Requirements:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>
+          Bachelor's degree in Business, Computer Science, or related field.
+        </li>
+        <li>3+ years of project management experience.</li>
+        <li>Experience with project management tools like JIRA or Trello.</li>
+        <li>Strong leadership and organizational skills.</li>
+        <li>PMP certification is a plus.</li>
+      </ul>
+    </div>
+
+    <a href="{% url 'application'%}" class="apply-btn"> Apply Now</a>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,56 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Services - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/extra.css" %}">
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<div style="display: flex">
+  <section class="apply">
+    <div class="container">
+      <h2>Apply Now</h2>
+      <form
+        action="{% url 'submit_application' %}"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        {% csrf_token %}
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="position">Position Applying For</label>
+        <select id="position" name="position" required>
+          <option value="senior-software-engineer">
+            Senior Software Engineer
+          </option>
+          <option value="project-manager">Project Manager</option>
+          <option value="it-consultant">IT Consultant</option>
+          <option value="data-analyst">Data Analyst</option>
+          <option value="network-engineer">Network Engineer</option>
+        </select>
+
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" name="resume" required />
+
+        <button type="submit" class="apply-btn">Submit Application</button>
+      </form>
+    </div>
+  </section>
+  <div style="padding-right: 10px">
+    {% for message in messages %}
+    <h1>{{message}}</h1>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

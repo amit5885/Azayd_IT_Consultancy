@@ -1,0 +1,49 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Services - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/careers.css" %}">
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<section class="job-detail">
+  <div class="container">
+    <h2>IT Consultant</h2>
+    <p><strong>Location:</strong> Bangalore</p>
+    <p><strong>Experience:</strong> 4+ years</p>
+    <p><strong>Job Description:</strong></p>
+    <p>
+      We are seeking an IT Consultant to provide strategic guidance and
+      technical expertise to our clients. The ideal candidate will have
+      extensive experience in IT consulting, strong problem-solving skills, and
+      a deep understanding of various technologies.
+    </p>
+    <p><strong>Responsibilities:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>Analyze clients' business needs and IT requirements.</li>
+        <li>Provide technical solutions and recommendations.</li>
+        <li>Develop and implement IT strategies.</li>
+        <li>Manage IT projects and ensure successful delivery.</li>
+        <li>Maintain strong client relationships.</li>
+      </ul>
+    </div>
+
+    <p><strong>Requirements:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>Bachelor's degree in Computer Science or related field.</li>
+        <li>4+ years of IT consulting experience.</li>
+        <li>Proficiency in IT infrastructure and systems.</li>
+        <li>Strong communication and presentation skills.</li>
+        <li>Ability to travel to client sites as needed.</li>
+      </ul>
+    </div>
+
+    <a href="{% url 'application'%}" class="apply-btn"> Apply Now</a>
+  </div>
+</section>
+{% endblock %}

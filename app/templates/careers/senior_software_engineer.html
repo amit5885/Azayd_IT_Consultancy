@@ -1,0 +1,55 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Senior Software Engineer - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/careers.css" %}">
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<section class="job-detail">
+  <div class="container">
+    <h2>Senior Software Engineer</h2>
+    <p><strong>Location:</strong> Remote</p>
+    <p><strong>Experience:</strong> 5+ years</p>
+    <p><strong>Job Description:</strong></p>
+    <p>
+      We are seeking a Senior Software Engineer with expertise in designing,
+      developing, and maintaining software applications. The ideal candidate
+      will have extensive experience in software development and a deep
+      understanding of modern technologies.
+    </p>
+    <p><strong>Responsibilities:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>Design and develop high-quality software solutions.</li>
+        <li>Collaborate with cross-functional teams.</li>
+        <li>Maintain and improve existing codebases.</li>
+        <li>Participate in code reviews.</li>
+        <li>
+          Ensure software meets all requirements of quality, security,
+          modifiability, and extensibility.
+        </li>
+      </ul>
+    </div>
+
+    <p><strong>Requirements:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>Bachelor's degree in Computer Science or related field.</li>
+        <li>5+ years of experience in software development.</li>
+        <li>
+          Proficiency in programming languages such as Java, Python, or C++.
+        </li>
+        <li>Experience with cloud platforms like AWS or Azure.</li>
+        <li>Strong problem-solving skills and attention to detail.</li>
+      </ul>
+    </div>
+
+    <a href="{% url 'application'%}" class="apply-btn"> Apply Now</a>
+  </div>
+</section>
+
+{% endblock %}

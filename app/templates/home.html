@@ -1,0 +1,121 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Home - Azayd Consulting
+{% endblock %}
+{% block head %}
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<section class="colored-section">
+  <!-- Title -->
+  <div style="display: flex; margin-top: 2rem; padding: 8rem 0">
+    <div style="margin-right: 1rem; width: auto">
+      <h1 class="big-heading">
+        Delivering strategic IT consultancy that empowers businesses to achieve
+        digital excellence
+      </h1>
+    </div>
+    <div style="margin-left: 1rem; padding-left: 5rem; width: auto">
+      <img
+        class="title-image"
+        style="width: 30rem"
+        src="{% static 'images/server-img.png' %}"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- bg -->
+
+<section class="colored-section" id="cta">
+  <div class="info">
+    <h3 class="">
+      Azayd Consultancy is at the forefront of innovation in technology. Our
+      staff possesses extensive deep tech knowledge, making us more than just
+      advisors. In creating an IT roadmap fit for the future, we collaborate.
+      our strategy is customized to make sure your company grows rather than
+      just adapts. We're here to enhance your experience at every turn, from
+      streamlining processes to maximizing the potential of mobile solutions.
+      Expert, intuitive, and quick to respond IT consulting services.
+    </h3>
+  </div>
+</section>
+
+<!-- Testimonials -->
+
+<section class="colored-section" id="testimonials">
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active container-fluid">
+        <h3 class="testimonials-text">
+          "Working with Azayd Company has been a game-changer for our business.
+          Their expert consultants provided invaluable insights and guidance,
+          helping us streamline our IT infrastructure and enhance efficiency.
+          Highly recommend their services to any organization seeking top-notch
+          IT solutions."
+        </h3>
+        <img
+          class="testimonial-image"
+          src="{% static 'images/img1.jpg' %}"
+          alt=""
+        />
+        <em>John Smith, CEO, XYZ Corporation</em>
+      </div>
+
+      <div class="carousel-item container-fluid">
+        <h3 class="testimonials-text">
+          "We've been partnering with Azyad Consultancy for several years now,
+          and they've consistently exceeded our expectations. Their team of
+          professionals possesses in-depth knowledge and expertise in IT
+          consulting, and their tailored solutions have greatly contributed to
+          our business growth. Thank you for your outstanding service!"
+        </h3>
+        <img
+          class="testimonial-image"
+          src="{% static 'images/img2.jpg' %}"
+          alt=""
+        />
+        <em>Sarah Johnson, IT Manager, ABC Company</em>
+      </div>
+
+      <div class="carousel-item container-fluid">
+        <h3 class="testimonials-text">
+          "Choosing Azyad Consultancy as our IT consultancy partner was one of
+          the best decisions we've made. Their consultants understood our
+          challenges, provided innovative solutions aligned with our goals, and
+          their dedication to client satisfaction makes them stand out. We look
+          forward to continuing our collaboration."
+        </h3>
+        <img
+          class="testimonial-image"
+          src="{% static 'images/img3.jpg' %}"
+          alt=""
+        />
+        <em>Michael Evans, CFO, DEF Enterprises</em>
+      </div>
+    </div>
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExample"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExample"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+{% endblock %}

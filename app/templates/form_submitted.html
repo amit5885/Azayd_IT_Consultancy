@@ -1,0 +1,21 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Services - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/extra.css" %}">
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<div class="conatiner-margin">
+  <h1>Email Sent Successfully</h1>
+  <h3>Thank you for contacting us!</h3>
+  <p>Your application has been received, and we'll get back to you shortly.</p>
+  <p>
+    If you have any urgent inquiries, please feel free to contact us directly.
+  </p>
+</div>
+
+{% endblock %}

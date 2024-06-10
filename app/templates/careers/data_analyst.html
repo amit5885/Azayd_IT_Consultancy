@@ -1,0 +1,54 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Services - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/careers.css" %}">
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<section class="job-detail">
+  <div class="container">
+    <h2>Data Analyst</h2>
+    <p><strong>Location:</strong> Pune</p>
+    <p><strong>Experience:</strong> 2+ years</p>
+    <p><strong>Job Description:</strong></p>
+    <p>
+      We are seeking a Data Analyst to interpret and analyze data to help drive
+      informed business decisions. The ideal candidate will have experience in
+      data analysis, proficiency in data visualization tools, and a strong
+      analytical mindset.
+    </p>
+    <p><strong>Responsibilities:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>Collect and analyze data to identify trends and patterns.</li>
+        <li>Create reports and dashboards to communicate findings.</li>
+        <li>Collaborate with business units to understand data needs.</li>
+        <li>Ensure data quality and integrity.</li>
+        <li>Provide actionable insights to support decision-making.</li>
+      </ul>
+    </div>
+
+    <p><strong>Requirements:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>
+          Bachelor's degree in Statistics, Mathematics, Computer Science, or
+          related field.
+        </li>
+        <li>2+ years of experience in data analysis.</li>
+        <li>
+          Proficiency in data visualization tools like Tableau or Power BI.
+        </li>
+        <li>Strong SQL skills.</li>
+        <li>Excellent problem-solving and analytical skills.</li>
+      </ul>
+    </div>
+
+    <a href="{% url 'application'%}" class="apply-btn"> Apply Now</a>
+  </div>
+</section>
+{% endblock %}

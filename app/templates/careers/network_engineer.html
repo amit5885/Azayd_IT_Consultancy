@@ -1,0 +1,53 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Services - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/careers.css" %}">
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<section class="job-detail">
+  <div class="container">
+    <h2>Network Engineer</h2>
+    <p><strong>Location:</strong> Austin, TX</p>
+    <p><strong>Experience:</strong> 3+ years</p>
+    <p><strong>Job Description:</strong></p>
+    <p>
+      We are seeking a Network Engineer to design, implement, and maintain
+      network infrastructure. The ideal candidate will have experience in
+      network engineering, strong troubleshooting skills, and a solid
+      understanding of network security.
+    </p>
+    <p><strong>Responsibilities:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>Design and implement network solutions.</li>
+        <li>Monitor and maintain network performance.</li>
+        <li>Troubleshoot and resolve network issues.</li>
+        <li>Ensure network security and data protection.</li>
+        <li>Collaborate with IT teams to support business needs.</li>
+      </ul>
+    </div>
+
+    <p><strong>Requirements:</strong></p>
+    <div class="sep">
+      <ul>
+        <li>
+          Bachelor's degree in Computer Science, Information Technology, or
+          related field.
+        </li>
+        <li>3+ years of experience in network engineering.</li>
+        <li>Proficiency in networking protocols and technologies.</li>
+        <li>Strong understanding of network security principles.</li>
+        <li>Cisco CCNA/CCNP certification is a plus.</li>
+      </ul>
+    </div>
+
+    <a href="{% url 'application'%}" class="apply-btn"> Apply Now</a>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 8px;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.sep ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+ul li a.active,
+ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+h3,
+h4 {
+  color: #8f8f8f;
+}
+
+.hero {
+  margin-top: 90px;
+  background-color: #4caf50;
+  color: white;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.job-listings {
+  padding: 2em 0;
+}
+
+.job-listings h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.job {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.job h4 {
+  margin: 0 0 0.5em 0;
+}
+
+.apply-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  padding-bottom: 5px;
+}
+
+.apply-btn:hover {
+  background-color: #45a049;
+}

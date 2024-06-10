@@ -1,0 +1,87 @@
+.container {
+  width: 90%;
+  margin-top: 80px;
+  color: white;
+}
+
+.left-section {
+  flex: 1;
+  background-color: #002855;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+.left-section h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.step-number {
+  font-size: 1.5em;
+  background-color: #1a73e8;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.step-info {
+  flex: 1;
+}
+
+.step-info h2 {
+  margin: 0 0 10px 0;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+textarea {
+  height: 100px;
+  resize: none;
+}
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,109 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+Services - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/services.css" %}">
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<section class="service" style="margin-top: 100px">
+  <h2>Network Infrastructure Management</h2>
+  <img
+    src="{% static 'images/network_management.jpg' %}"
+    alt="Network Infrastructure"
+  />
+  <p>
+    Our Network Infrastructure Management service ensures the seamless operation
+    of your network infrastructure, providing reliability, security, and
+    performance. We offer 24/7 monitoring and support, proactive maintenance to
+    prevent downtime, scalability planning to accommodate growth, and regular
+    security audits to keep your network protected.
+  </p>
+  <div class="sep">
+    <ul>
+      <li>24/7 monitoring and support</li>
+      <li>Proactive maintenance</li>
+      <li>Scalability planning</li>
+      <li>Regular Security audits and enhancements</li>
+    </ul>
+  </div>
+</section>
+<section class="service">
+  <h2>Cloud Solutions</h2>
+  <img src="{% static 'images/cloud.jpg' %}" alt="Cloud Solutions" />
+  <p>
+    Our Cloud Solutions service enables businesses to harness the power of cloud
+    computing for increased agility, scalability, and cost-efficiency. We offer
+    services including cloud migration, architecture design, optimization for
+    performance and cost, and robust backup and disaster recovery solutions.
+  </p>
+  <div class="sep">
+    <ul>
+      <li>Cloud migration and onboarding</li>
+      <li>Cloud architecture design</li>
+      <li>Performance and cost optimization</li>
+      <li>Reliable backup and disaster recovery</li>
+    </ul>
+  </div>
+</section>
+
+<section class="service">
+  <h2>Cybersecurity Consulting</h2>
+  <img src="{% static 'images/cyber.jpg' %}" alt="Cloud Solutions" />
+  <p>
+    Our Cybersecurity Consulting service safeguards your digital assets from
+    cyber threats and vulnerabilities. We conduct comprehensive risk
+    assessments, implement robust security measures, provide employee training,
+    and offer ongoing monitoring and threat intelligence.
+  </p>
+  <div class="sep">
+    <ul>
+      <li>Comprehensive risk assessments</li>
+      <li>Implementation of robust security measures</li>
+      <li>Employee cybersecurity training</li>
+      <li>Ongoing monitoring and threat intelligence</li>
+    </ul>
+  </div>
+</section>
+
+<section class="service">
+  <h2>Data Analytics and Business Intelligence</h2>
+  <img src="{% static 'images/analytics.png' %}" alt="Cloud Solutions" />
+  <p>
+    Our Data Analytics and Business Intelligence service empowers businesses to
+    make informed decisions through data-driven insights. We offer data
+    analysis, visualization, predictive modeling, and BI dashboard development
+    to unlock the full potential of your data.
+  </p>
+  <div class="sep">
+    <ul>
+      <li>Data analysis and visualization</li>
+      <li>Predictive modeling for future trends</li>
+      <li>BI dashboard development</li>
+      <li>Informed decision-making through data insights</li>
+    </ul>
+  </div>
+</section>
+
+<section class="service">
+  <h2>IT Strategy and Consulting</h2>
+  <img src="{% static 'images/it_consulting.png' %}" alt="Cloud Solutions" />
+  <p>
+    Our IT Strategy and Consulting service helps align your technology
+    initiatives with your business goals for sustained growth and
+    competitiveness. We provide IT strategy development, technology roadmap
+    planning, vendor management, and IT governance advisory services.
+  </p>
+  <div class="sep">
+    <ul>
+      <li>IT strategy development aligned with business goals</li>
+      <li>Technology roadmap planning for future initiatives</li>
+      <li>Vendor management and evaluation</li>
+      <li>IT governance advisory services for effective management</li>
+    </ul>
+  </div>
+</section>
+{% endblock %}

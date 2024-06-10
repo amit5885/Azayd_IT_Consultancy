@@ -1,0 +1,88 @@
+<!-- prettier-ignore -->
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+About - Azayd Consulting
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static "styles/about.css" %}">
+<!-- prettier-ignore -->
+{% endblock %}
+{%block content %}
+<section class="history box" style="margin-top: 100px">
+  <h2><u>Company History</u></h2>
+  <p>
+    Founded in 2010, Azayd IT Consulting Services has been a pioneer in
+    providing top-tier IT solutions. Starting with a dedicated team of experts,
+    we have grown to become a trusted partner for businesses worldwide. Our
+    focus has always been on leveraging technology to drive business success and
+    innovation.
+  </p>
+</section>
+<section class="mission-vision-values box">
+  <div class="mission">
+    <h3>Mission</h3>
+    <p>
+      Our mission is to deliver innovative IT solutions that drive business
+      success and enhance operational efficiency. We aim to empower our clients
+      with the tools and strategies they need to thrive in the digital age.
+    </p>
+  </div>
+  <div class="vision">
+    <h3>Vision</h3>
+    <p>
+      Our vision is to be a global leader in IT consultancy, renowned for our
+      expertise, commitment, and customer-centric approach. We strive to shape
+      the future of technology and create a lasting impact on the industry.
+    </p>
+  </div>
+  <div class="values">
+    <h3>Values</h3>
+    <p>
+      Integrity, innovation, customer focus, and excellence are the core values
+      that guide our business practices. These values ensure we deliver the best
+      possible outcomes for our clients and maintain a high standard of service.
+    </p>
+  </div>
+</section>
+<h2><u>Meet Our Team</u></h2>
+<section class="team box">
+  <div class="team-member">
+    <img src="{% static 'images/img1.jpg' %}" alt="John Doe" />
+    <h4>John Doe</h4>
+    <p>
+      CEO - John is a visionary leader with over 20 years of experience in the
+      IT industry. He founded Azayd to help businesses harness the power of
+      technology and achieve unprecedented growth through innovative solutions.
+    </p>
+  </div>
+  <div class="team-member">
+    <img src="{% static 'images/img2.jpg' %}" alt="Jane Smith" />
+    <h4>Jane Smith</h4>
+    <p>
+      CTO - Jane is an expert in cloud computing and cybersecurity. She drives
+      the technical strategy and innovation at Azayd, ensuring our solutions are
+      cutting-edge and secure for all our clients.
+    </p>
+  </div>
+  <div class="team-member">
+    <img src="{% static 'images/img3.jpg' %}" alt="Mike Brown" />
+    <h4>Mike Brown</h4>
+    <p>
+      COO - With a strong background in operations management, Mike ensures that
+      our services are delivered efficiently and effectively. His leadership
+      ensures that we meet the highest standards of quality and client
+      satisfaction.
+    </p>
+  </div>
+  <div class="team-member">
+    <img src="{% static 'images/img4.jpg' %}" alt="Emily Johnson" />
+    <h4>Emily Johnson</h4>
+    <p>
+      CFO - Emily is a financial expert with extensive experience in managing
+      finances and investments. She oversees the financial operations at Azayd,
+      ensuring transparency, accuracy, and fiscal responsibility.
+    </p>
+  </div>
+</section>
+{% endblock %}
